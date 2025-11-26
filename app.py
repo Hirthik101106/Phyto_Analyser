@@ -81,7 +81,7 @@ def fetch_domain_compounds(gene: str, domain: str, ic50_threshold: float, max_re
                     "Pathway": pathway,
                     "Domain": domain,
                     "ChEMBL_ID": mol_id,
-                    "Type": mol.get("molecule_type", "Unknown")
+                    "Type": mol.get("molecule_type", "unknown")
                 })
             except Exception as e:
                 continue
@@ -248,3 +248,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
